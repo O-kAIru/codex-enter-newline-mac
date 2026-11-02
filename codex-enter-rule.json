@@ -1,0 +1,59 @@
+{
+  "description": "Codex: Enter for newline, Command+Enter to send (experimental)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "return_or_enter",
+        "modifiers": {
+          "mandatory": [
+            "command"
+          ],
+          "optional": [
+            "caps_lock"
+          ]
+        }
+      },
+      "to": [
+        {
+          "key_code": "return_or_enter"
+        }
+      ],
+      "conditions": [
+        {
+          "type": "frontmost_application_if",
+          "bundle_identifiers": [
+            "^com\\.openai\\.codex$"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "return_or_enter",
+        "modifiers": {
+          "optional": [
+            "caps_lock"
+          ]
+        }
+      },
+      "to": [
+        {
+          "key_code": "return_or_enter",
+          "modifiers": [
+            "left_shift"
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "type": "frontmost_application_if",
+          "bundle_identifiers": [
+            "^com\\.openai\\.codex$"
+          ]
+        }
+      ]
+    }
+  ]
+}
