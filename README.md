@@ -1,5 +1,7 @@
 # Codex の Enter キーを改行にする（Mac）
 
+日本語 | [English](README.en.md)
+
 macOS の Codex デスクトップアプリで、Karabiner-Elements を使ってメッセージ入力時のキー操作を変更する設定です。
 
 | 操作 | 変更後の動作 |
